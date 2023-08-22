@@ -1,0 +1,5 @@
+FSD50K='path/to/FSD50k'
+ESC50='path/to/ESC-50/audio'
+org_audio_csv_dir = 'org_audio_csv/'
+sv_csv_dir = 'audio_csv/'
+preprocess_data_dir = 'preprocess'

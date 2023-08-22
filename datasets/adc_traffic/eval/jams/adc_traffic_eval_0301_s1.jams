@@ -1,0 +1,275 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {},
+        "version": "",
+        "corpus": "",
+        "annotation_tools": "",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": ""
+      },
+      "namespace": "scaper",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 10.0,
+          "value": {
+            "label": "car_passing",
+            "source_file": "source/eval/background/car_passing/156639.wav",
+            "source_time": 4.649856509644776,
+            "event_time": 0,
+            "event_duration": 10,
+            "snr": 0,
+            "role": "background",
+            "pitch_shift": null,
+            "time_stretch": null
+          },
+          "confidence": 1.0
+        },
+        {
+          "time": 0.0,
+          "duration": 10.0,
+          "value": {
+            "label": "car_passing",
+            "source_file": "source/eval/background/car_passing/17208.wav",
+            "source_time": 1.2525765648220122,
+            "event_time": 0,
+            "event_duration": 10,
+            "snr": 0,
+            "role": "background",
+            "pitch_shift": null,
+            "time_stretch": null
+          },
+          "confidence": 1.0
+        },
+        {
+          "time": 1.3488311799410404,
+          "duration": 1.215986394557823,
+          "value": {
+            "label": "car_horn",
+            "source_file": "source/eval/foreground/car_horn/5-179860-A-43.wav",
+            "source_time": 0,
+            "event_time": 1.3488311799410404,
+            "event_duration": 1.215986394557823,
+            "snr": 14.19205196156976,
+            "role": "foreground",
+            "pitch_shift": null,
+            "time_stretch": null
+          },
+          "confidence": 1.0
+        },
+        {
+          "time": 2.924226494755165,
+          "duration": 3.1654052996243722,
+          "value": {
+            "label": "dog",
+            "source_file": "source/eval/foreground/dog/5-208030-A-0.wav",
+            "source_time": 0,
+            "event_time": 2.924226494755165,
+            "event_duration": 3.1654052996243722,
+            "snr": 7.791479746850799,
+            "role": "foreground",
+            "pitch_shift": null,
+            "time_stretch": null
+          },
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {
+        "scaper": {
+          "duration": 10,
+          "original_duration": 10,
+          "fg_path": "source/eval/foreground",
+          "bg_path": "source/eval/background",
+          "fg_spec": [
+            [
+              [
+                "const",
+                "car_horn"
+              ],
+              [
+                "choose",
+                []
+              ],
+              [
+                "const",
+                0
+              ],
+              [
+                "uniform",
+                0,
+                8
+              ],
+              [
+                "uniform",
+                3,
+                5
+              ],
+              [
+                "const",
+                14.19205196156976
+              ],
+              "foreground",
+              null,
+              null
+            ],
+            [
+              [
+                "const",
+                "dog"
+              ],
+              [
+                "choose",
+                []
+              ],
+              [
+                "const",
+                0
+              ],
+              [
+                "uniform",
+                0,
+                8
+              ],
+              [
+                "uniform",
+                3,
+                5
+              ],
+              [
+                "const",
+                7.791479746850799
+              ],
+              "foreground",
+              null,
+              null
+            ]
+          ],
+          "bg_spec": [
+            [
+              [
+                "const",
+                "car_passing"
+              ],
+              [
+                "const",
+                "source/eval/background/car_passing/156639.wav"
+              ],
+              [
+                "uniform",
+                0,
+                10
+              ],
+              [
+                "const",
+                0
+              ],
+              [
+                "const",
+                10
+              ],
+              [
+                "const",
+                0
+              ],
+              "background",
+              null,
+              null
+            ],
+            [
+              [
+                "const",
+                "car_passing"
+              ],
+              [
+                "const",
+                "source/eval/background/car_passing/17208.wav"
+              ],
+              [
+                "uniform",
+                0,
+                10
+              ],
+              [
+                "const",
+                0
+              ],
+              [
+                "const",
+                10
+              ],
+              [
+                "const",
+                0
+              ],
+              "background",
+              null,
+              null
+            ]
+          ],
+          "fg_labels": [
+            "birds",
+            "car_horn",
+            "car_passing",
+            "church_bells",
+            "dog",
+            "footsteps",
+            "rain",
+            "thunder"
+          ],
+          "bg_labels": [
+            "car_passing",
+            "rain"
+          ],
+          "protected_labels": [],
+          "sr": 44100,
+          "ref_db": -47.10796508644752,
+          "n_channels": 1,
+          "fade_in_len": 0.01,
+          "fade_out_len": 0.01,
+          "n_events": 2,
+          "polyphony_max": 1,
+          "polyphony_gini": 0.4380012831020932,
+          "allow_repeated_label": true,
+          "allow_repeated_source": true,
+          "reverb": null,
+          "scaper_version": "1.6.5",
+          "soundscape_audio_path": "datasets/adc_traffic/eval/wav/adc_traffic_eval_0301_s1.wav",
+          "isolated_events_audio_path": [],
+          "audio_path": "datasets/adc_traffic/eval/wav/adc_traffic_eval_0301_s1.wav",
+          "jams_path": "datasets/adc_traffic/eval/jams/adc_traffic_eval_0301_s1.jams",
+          "fix_clipping": false,
+          "peak_normalization": false,
+          "save_isolated_events": false,
+          "isolated_events_path": null,
+          "disable_sox_warnings": true,
+          "no_audio": false,
+          "txt_path": "datasets/adc_traffic/eval/txt/adc_traffic_eval_0301_s1.txt",
+          "txt_sep": "\t",
+          "disable_instantiation_warnings": false,
+          "peak_normalization_scale_factor": 1.0,
+          "ref_db_change": 0,
+          "ref_db_generated": -47.10796508644752,
+          "quick_pitch_time": false
+        }
+      },
+      "time": 0,
+      "duration": 10
+    }
+  ],
+  "file_metadata": {
+    "title": "",
+    "artist": "",
+    "release": "",
+    "duration": 10,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {}
+}

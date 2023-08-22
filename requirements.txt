@@ -1,0 +1,7 @@
+numpy==1.21.0
+PyYAML==5.3.1
+librosa==0.8.1
+pandas==1.5.3
+tqdm==4.51.0
+scipy==1.7.1
+scaper==1.6.5

@@ -1,0 +1,228 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {},
+        "version": "",
+        "corpus": "",
+        "annotation_tools": "",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": ""
+      },
+      "namespace": "scaper",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 10.0,
+          "value": {
+            "label": "rain",
+            "source_file": "source/eval/background/rain/110611.wav",
+            "source_time": 6.800615913759948,
+            "event_time": 0,
+            "event_duration": 10,
+            "snr": 0,
+            "role": "background",
+            "pitch_shift": null,
+            "time_stretch": null
+          },
+          "confidence": 1.0
+        },
+        {
+          "time": 0.0,
+          "duration": 10.0,
+          "value": {
+            "label": "rain",
+            "source_file": "source/eval/background/rain/56369.wav",
+            "source_time": 9.861043574503997,
+            "event_time": 0,
+            "event_duration": 10,
+            "snr": 0,
+            "role": "background",
+            "pitch_shift": null,
+            "time_stretch": null
+          },
+          "confidence": 1.0
+        },
+        {
+          "time": 1.1195954987842542,
+          "duration": 3.1223356009070296,
+          "value": {
+            "label": "birds",
+            "source_file": "source/eval/foreground/birds/5-242491-A-14.wav",
+            "source_time": 0,
+            "event_time": 1.1195954987842542,
+            "event_duration": 3.1223356009070296,
+            "snr": 14.109711108276105,
+            "role": "foreground",
+            "pitch_shift": null,
+            "time_stretch": null
+          },
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {
+        "scaper": {
+          "duration": 10,
+          "original_duration": 10,
+          "fg_path": "source/eval/foreground",
+          "bg_path": "source/eval/background",
+          "fg_spec": [
+            [
+              [
+                "const",
+                "birds"
+              ],
+              [
+                "choose",
+                []
+              ],
+              [
+                "const",
+                0
+              ],
+              [
+                "uniform",
+                0,
+                8
+              ],
+              [
+                "uniform",
+                3,
+                5
+              ],
+              [
+                "const",
+                14.109711108276105
+              ],
+              "foreground",
+              null,
+              null
+            ]
+          ],
+          "bg_spec": [
+            [
+              [
+                "const",
+                "rain"
+              ],
+              [
+                "const",
+                "source/eval/background/rain/110611.wav"
+              ],
+              [
+                "uniform",
+                0,
+                10
+              ],
+              [
+                "const",
+                0
+              ],
+              [
+                "const",
+                10
+              ],
+              [
+                "const",
+                0
+              ],
+              "background",
+              null,
+              null
+            ],
+            [
+              [
+                "const",
+                "rain"
+              ],
+              [
+                "const",
+                "source/eval/background/rain/56369.wav"
+              ],
+              [
+                "uniform",
+                0,
+                10
+              ],
+              [
+                "const",
+                0
+              ],
+              [
+                "const",
+                10
+              ],
+              [
+                "const",
+                0
+              ],
+              "background",
+              null,
+              null
+            ]
+          ],
+          "fg_labels": [
+            "birds",
+            "car_horn",
+            "car_passing",
+            "church_bells",
+            "dog",
+            "footsteps",
+            "rain",
+            "thunder"
+          ],
+          "bg_labels": [
+            "car_passing",
+            "rain"
+          ],
+          "protected_labels": [],
+          "sr": 44100,
+          "ref_db": -54.11013066637182,
+          "n_channels": 1,
+          "fade_in_len": 0.01,
+          "fade_out_len": 0.01,
+          "n_events": 1,
+          "polyphony_max": 1,
+          "polyphony_gini": 0.3120022051211373,
+          "allow_repeated_label": true,
+          "allow_repeated_source": true,
+          "reverb": null,
+          "scaper_version": "1.6.5",
+          "soundscape_audio_path": "datasets/adc_rain/eval/wav/adc_rain_eval_0176_s1.wav",
+          "isolated_events_audio_path": [],
+          "audio_path": "datasets/adc_rain/eval/wav/adc_rain_eval_0176_s1.wav",
+          "jams_path": "datasets/adc_rain/eval/jams/adc_rain_eval_0176_s1.jams",
+          "fix_clipping": false,
+          "peak_normalization": false,
+          "save_isolated_events": false,
+          "isolated_events_path": null,
+          "disable_sox_warnings": true,
+          "no_audio": false,
+          "txt_path": "datasets/adc_rain/eval/txt/adc_rain_eval_0176_s1.txt",
+          "txt_sep": "\t",
+          "disable_instantiation_warnings": false,
+          "peak_normalization_scale_factor": 1.0,
+          "ref_db_change": 0,
+          "ref_db_generated": -54.11013066637182,
+          "quick_pitch_time": false
+        }
+      },
+      "time": 0,
+      "duration": 10
+    }
+  ],
+  "file_metadata": {
+    "title": "",
+    "artist": "",
+    "release": "",
+    "duration": 10,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {}
+}

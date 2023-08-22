@@ -1,0 +1,275 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {},
+        "version": "",
+        "corpus": "",
+        "annotation_tools": "",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": ""
+      },
+      "namespace": "scaper",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 10.0,
+          "value": {
+            "label": "car_passing",
+            "source_file": "source/dev/background/car_passing/68660.wav",
+            "source_time": 6.482094543193975,
+            "event_time": 0,
+            "event_duration": 10,
+            "snr": 0,
+            "role": "background",
+            "pitch_shift": null,
+            "time_stretch": null
+          },
+          "confidence": 1.0
+        },
+        {
+          "time": 0.0,
+          "duration": 10.0,
+          "value": {
+            "label": "car_passing",
+            "source_file": "source/dev/background/car_passing/425527.wav",
+            "source_time": 9.017255315624661,
+            "event_time": 0,
+            "event_duration": 10,
+            "snr": 0,
+            "role": "background",
+            "pitch_shift": null,
+            "time_stretch": null
+          },
+          "confidence": 1.0
+        },
+        {
+          "time": 0.36108618698965156,
+          "duration": 3.9808577647329177,
+          "value": {
+            "label": "car_horn",
+            "source_file": "source/dev/foreground/car_horn/3-243726-A-43.wav",
+            "source_time": 0,
+            "event_time": 0.36108618698965156,
+            "event_duration": 3.9808577647329177,
+            "snr": 0.13308386736950517,
+            "role": "foreground",
+            "pitch_shift": null,
+            "time_stretch": null
+          },
+          "confidence": 1.0
+        },
+        {
+          "time": 3.0021444332381018,
+          "duration": 3.33832758678491,
+          "value": {
+            "label": "church_bells",
+            "source_file": "source/dev/foreground/church_bells/1-13572-A-46.wav",
+            "source_time": 0,
+            "event_time": 3.0021444332381018,
+            "event_duration": 3.33832758678491,
+            "snr": 17.22702561662235,
+            "role": "foreground",
+            "pitch_shift": null,
+            "time_stretch": null
+          },
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {
+        "scaper": {
+          "duration": 10,
+          "original_duration": 10,
+          "fg_path": "source/dev/foreground",
+          "bg_path": "source/dev/background",
+          "fg_spec": [
+            [
+              [
+                "const",
+                "car_horn"
+              ],
+              [
+                "choose",
+                []
+              ],
+              [
+                "const",
+                0
+              ],
+              [
+                "uniform",
+                0,
+                8
+              ],
+              [
+                "uniform",
+                3,
+                5
+              ],
+              [
+                "const",
+                0.13308386736950517
+              ],
+              "foreground",
+              null,
+              null
+            ],
+            [
+              [
+                "const",
+                "church_bells"
+              ],
+              [
+                "choose",
+                []
+              ],
+              [
+                "const",
+                0
+              ],
+              [
+                "uniform",
+                0,
+                8
+              ],
+              [
+                "uniform",
+                3,
+                5
+              ],
+              [
+                "const",
+                17.22702561662235
+              ],
+              "foreground",
+              null,
+              null
+            ]
+          ],
+          "bg_spec": [
+            [
+              [
+                "const",
+                "car_passing"
+              ],
+              [
+                "const",
+                "source/dev/background/car_passing/68660.wav"
+              ],
+              [
+                "uniform",
+                0,
+                10
+              ],
+              [
+                "const",
+                0
+              ],
+              [
+                "const",
+                10
+              ],
+              [
+                "const",
+                0
+              ],
+              "background",
+              null,
+              null
+            ],
+            [
+              [
+                "const",
+                "car_passing"
+              ],
+              [
+                "const",
+                "source/dev/background/car_passing/425527.wav"
+              ],
+              [
+                "uniform",
+                0,
+                10
+              ],
+              [
+                "const",
+                0
+              ],
+              [
+                "const",
+                10
+              ],
+              [
+                "const",
+                0
+              ],
+              "background",
+              null,
+              null
+            ]
+          ],
+          "fg_labels": [
+            "birds",
+            "car_horn",
+            "car_passing",
+            "church_bells",
+            "dog",
+            "footsteps",
+            "rain",
+            "thunder"
+          ],
+          "bg_labels": [
+            "car_passing",
+            "rain"
+          ],
+          "protected_labels": [],
+          "sr": 44100,
+          "ref_db": -39.66616642711735,
+          "n_channels": 1,
+          "fade_in_len": 0.01,
+          "fade_out_len": 0.01,
+          "n_events": 2,
+          "polyphony_max": 2,
+          "polyphony_gini": 0.5130607745071387,
+          "allow_repeated_label": true,
+          "allow_repeated_source": true,
+          "reverb": null,
+          "scaper_version": "1.6.5",
+          "soundscape_audio_path": "datasets/adc_traffic/dev/wav/adc_traffic_dev_0702_s1.wav",
+          "isolated_events_audio_path": [],
+          "audio_path": "datasets/adc_traffic/dev/wav/adc_traffic_dev_0702_s1.wav",
+          "jams_path": "datasets/adc_traffic/dev/jams/adc_traffic_dev_0702_s1.jams",
+          "fix_clipping": false,
+          "peak_normalization": false,
+          "save_isolated_events": false,
+          "isolated_events_path": null,
+          "disable_sox_warnings": true,
+          "no_audio": false,
+          "txt_path": "datasets/adc_traffic/dev/txt/adc_traffic_dev_0702_s1.txt",
+          "txt_sep": "\t",
+          "disable_instantiation_warnings": false,
+          "peak_normalization_scale_factor": 1.0,
+          "ref_db_change": 0,
+          "ref_db_generated": -39.66616642711735,
+          "quick_pitch_time": false
+        }
+      },
+      "time": 0,
+      "duration": 10
+    }
+  ],
+  "file_metadata": {
+    "title": "",
+    "artist": "",
+    "release": "",
+    "duration": 10,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {}
+}

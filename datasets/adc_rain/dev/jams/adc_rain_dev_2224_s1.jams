@@ -1,0 +1,180 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {},
+        "version": "",
+        "corpus": "",
+        "annotation_tools": "",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": ""
+      },
+      "namespace": "scaper",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 10.0,
+          "value": {
+            "label": "rain",
+            "source_file": "source/dev/background/rain/379755.wav",
+            "source_time": 1.29506932434595,
+            "event_time": 0,
+            "event_duration": 10,
+            "snr": 0,
+            "role": "background",
+            "pitch_shift": null,
+            "time_stretch": null
+          },
+          "confidence": 1.0
+        },
+        {
+          "time": 0.0,
+          "duration": 10.0,
+          "value": {
+            "label": "rain",
+            "source_file": "source/dev/background/rain/391690.wav",
+            "source_time": 3.1026914912741956,
+            "event_time": 0,
+            "event_duration": 10,
+            "snr": 0,
+            "role": "background",
+            "pitch_shift": null,
+            "time_stretch": null
+          },
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {
+        "scaper": {
+          "duration": 10,
+          "original_duration": 10,
+          "fg_path": "source/dev/foreground",
+          "bg_path": "source/dev/background",
+          "fg_spec": [],
+          "bg_spec": [
+            [
+              [
+                "const",
+                "rain"
+              ],
+              [
+                "const",
+                "source/dev/background/rain/379755.wav"
+              ],
+              [
+                "uniform",
+                0,
+                10
+              ],
+              [
+                "const",
+                0
+              ],
+              [
+                "const",
+                10
+              ],
+              [
+                "const",
+                0
+              ],
+              "background",
+              null,
+              null
+            ],
+            [
+              [
+                "const",
+                "rain"
+              ],
+              [
+                "const",
+                "source/dev/background/rain/391690.wav"
+              ],
+              [
+                "uniform",
+                0,
+                10
+              ],
+              [
+                "const",
+                0
+              ],
+              [
+                "const",
+                10
+              ],
+              [
+                "const",
+                0
+              ],
+              "background",
+              null,
+              null
+            ]
+          ],
+          "fg_labels": [
+            "birds",
+            "car_horn",
+            "car_passing",
+            "church_bells",
+            "dog",
+            "footsteps",
+            "rain",
+            "thunder"
+          ],
+          "bg_labels": [
+            "car_passing",
+            "rain"
+          ],
+          "protected_labels": [],
+          "sr": 44100,
+          "ref_db": -49.12145798685652,
+          "n_channels": 1,
+          "fade_in_len": 0.01,
+          "fade_out_len": 0.01,
+          "n_events": 0,
+          "polyphony_max": 0,
+          "polyphony_gini": 0,
+          "allow_repeated_label": true,
+          "allow_repeated_source": true,
+          "reverb": null,
+          "scaper_version": "1.6.5",
+          "soundscape_audio_path": "datasets/adc_rain/dev/wav/adc_rain_dev_2224_s1.wav",
+          "isolated_events_audio_path": [],
+          "audio_path": "datasets/adc_rain/dev/wav/adc_rain_dev_2224_s1.wav",
+          "jams_path": "datasets/adc_rain/dev/jams/adc_rain_dev_2224_s1.jams",
+          "fix_clipping": false,
+          "peak_normalization": false,
+          "save_isolated_events": false,
+          "isolated_events_path": null,
+          "disable_sox_warnings": true,
+          "no_audio": false,
+          "txt_path": "datasets/adc_rain/dev/txt/adc_rain_dev_2224_s1.txt",
+          "txt_sep": "\t",
+          "disable_instantiation_warnings": false,
+          "peak_normalization_scale_factor": 1.0,
+          "ref_db_change": 0,
+          "ref_db_generated": -49.12145798685652,
+          "quick_pitch_time": false
+        }
+      },
+      "time": 0,
+      "duration": 10
+    }
+  ],
+  "file_metadata": {
+    "title": "",
+    "artist": "",
+    "release": "",
+    "duration": 10,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {}
+}
