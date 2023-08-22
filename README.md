@@ -60,7 +60,7 @@ python synthesize_audio -d datasets/adc_traffic/eval
 ```
 
 ## License
-Please check the LICENSE for the detail.
+Please check the LICENSE.pdf for the detail.
 
 ## References
 - E. Fonseca, X. Favory, J. Pons, F. Font, and X. Serra, “FSD50K: an open dataset of human-labeled sound events,” arXiv preprint arXiv:2010.00475, 2020.
